@@ -1,5 +1,4 @@
 import NextAuth from "next-auth"
-import SpotifyProvider from "next-auth/providers/spotify "
 import spotifyApi, { LOGIN_URL } from "../../../lib/spotify"
 
 async function refreshAccessToken(token) {
@@ -72,7 +71,7 @@ export default NextAuth({
             session.user.username = token.username;
 
             return session;
-        } 
+        }
     },
 
 })
