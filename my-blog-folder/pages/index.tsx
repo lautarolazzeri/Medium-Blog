@@ -1,14 +1,8 @@
-import Head from 'next/head'
 import Header from '../components/Header'
 
 export default function Home() {
   return (
     <div className="max-w-7xl mx-auto">
-      <Head>
-        <title>Personal Blog</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
       <Header />
 
       <div className='flex justify-between items-center bg-yellow-400 border-y border-black py-10 lg:py-0'>
